@@ -1,0 +1,23 @@
+html
+    head
+        title Quinto Proyecto CoderHouse
+        link(rel="stylesheet", href="styles.css")
+    body 
+        nav 
+            a(href='/') Home
+            a(href='/products') Products 
+    
+        div(class='form-container')
+            h2 Form 
+            form(class="form-style-4", method="post", action="/products")
+                label Title 
+                input(type='text', name="title")
+                br
+                label Price
+                input(type='number', name="price")
+                br
+                label Thumbnail URL
+                input(type='text', name="thumbnail")
+                br
+                br
+                button(class="button", type="submit") Submit

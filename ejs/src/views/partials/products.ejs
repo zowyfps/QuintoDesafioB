@@ -1,0 +1,21 @@
+<div class="lista">
+    <h2>Listado de Productos</h2>
+    <% if (newProducts.length > 0) { %>
+    <% newProducts.forEach((product)=>{ %>   
+      <table style="width:60%">
+    <tr>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Thumbnail</th>
+    </tr>
+    <tr>
+      <td><%= product.title %></td>
+      <td><%= product.price %>USD</td>
+      <td><img class="logo" src="<%= product.thumbnail %>"/></td>
+    </tr> 
+    </table>
+    <% }) %>
+    <%} else { %>
+        <h2>No hay productos agregados</h2>
+    <% } %>
+  </div>

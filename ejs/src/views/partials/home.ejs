@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinto Proyecto CoderHouse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Form</h2>
+        <form class="form-style-4" method="post" action="/products">
+            <label>Title</label>
+            <input type="text" name="title"/>
+            <br>
+            <label>Price</label>
+            <input type="number" name="price"/>
+            <br>
+            <label>Thumbnail URL</label>
+            <input type="text" name="thumbnail"/>
+            <br>
+            <br>
+            <button class="button"type="submit">Submit</button>
+        </form>
+    </div>
+    <%- include("./partials/products.ejs", {newProducts: products}) %>
+</body>
+</html>
